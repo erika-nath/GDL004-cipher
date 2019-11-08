@@ -4,12 +4,64 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+
+<<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Permanent+Marker&display=swap" rel="stylesheet"> >
+
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1 class="encabezado">"Yo nunca nunca!!!"<h1>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  <section>
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">
+        <h1 id="titulo">Aqui puedes exponer tus secretos con codigos!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 offset-md-3 text-center" id="texto">
+        <p></a>Elije una clave para codificar y escribe tu yo nunca nunca.
+        </p>
+      </div>
+    </div>
+<!--<fin del div cuadro1>
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">-->
+        <div>
+          <input id="caja" type="text" name="valorN" placeholder="Elige un número" data-toggle="tooltip" title="Número de veces que se correrá cada letra de tu mensaje">
+        </div>
+    <!--  </div>
+    </div>-->
+
+
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">
+        <div>
+          <p id="mensaje">Escribe tu mensaje aquí</p>
+          <textarea id="inputText" name="mensaje" placeholder="Escribe tu mensaje aquí" onkeyup="this.value=this.value.toUpperCase();"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">
+<button class="buttons"  onclick="encodeButton()" name="boton">Codificar</button>
+        <button class="buttons" onclick="decodeButton()" name="boton">Decodificar</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">
+        <p id="RespuestaCodificada"></p>
+        <p id="RespuestaDecodificada"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer><!-- Pie de pagina -->
+   <p>Divierte como nunca</p>
+ </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
