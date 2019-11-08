@@ -5,7 +5,7 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
 
-<<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Permanent+Marker&display=swap" rel="stylesheet"> >
+<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Permanent+Marker&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -27,9 +27,14 @@
 <!--<fin del div cuadro1>
     <div class="row">
       <div class="col-12 col-md-12 text-center">-->
+
+          <div class="row">
+            <div class="col-12 col-md-12 text-center">
+              <div>
         <div>
           <input id="caja" type="text" name="valorN" placeholder="Elige un número" data-toggle="tooltip" title="Número de veces que se correrá cada letra de tu mensaje">
         </div>
+          </div>
     <!--  </div>
     </div>-->
 
@@ -46,19 +51,20 @@
       <div class="col-12 col-md-12 text-center">
 <button class="buttons"  onclick="encodeButton()" name="boton">Codificar</button>
         <button class="buttons" onclick="decodeButton()" name="boton">Decodificar</button>
-      </div>
+        <p id="mensaje1">Copia y pega arriba</p>
+  </div>
     </div>
     <div class="row">
       <div class="col-12 col-md-12 text-center">
         <p id="RespuestaCodificada"></p>
         <p id="RespuestaDecodificada"></p>
-      </div>
+
+
     </div>
   </section>
 
 
-  <footer><!-- Pie de pagina -->
-   <p><h3 Divierte como nunca></h3></p>
+  <footer><p><h3 Divierte como nunca></h3></p>
  </footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
